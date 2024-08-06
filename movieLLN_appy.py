@@ -7,7 +7,7 @@ import streamlit as st
 import os
 
 
-TMDB_API_KEY = st.secrets["api"]["TMDB_API_KEY"]
+TMDB_API_KEY = 'f8aae18714b310a2ddd7cb00e6445f5f'
 
 # Load the dataset
 file_path = 'movies_step2 - movies_step2.csv'  # Ensure the CSV is in the same directory
