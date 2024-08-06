@@ -1,5 +1,5 @@
 
-
+﻿
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
@@ -57,13 +57,14 @@ st.title("Movie Recommendation System")
 
 movie_title = st.text_input("Enter a movie title:")
 if movie_title:
-    recommendations = get_recommendations(movie_title, similarity_matrix, movie_titles)
-    if "Movie not found in the dataset." in recommendations:
-        st.write("Movie not found in the dataset.")
-    else:
-        st.write("Recommended Movies:")
-        for movie in recommendations:
-            st.write(movie)
-           # poster_url = fetch_movie_poster(movie)
-            #if poster_url:
-               # st.image(poster_url, width=150)
+    st.write(movie_title)
+    # recommendations = get_recommendations(movie_title, similarity_matrix, movie_titles)
+    # if "Movie not found in the dataset." in recommendations:
+    #     st.write("Movie not found in the dataset.")
+    # else:
+    #     st.write("Recommended Movies:")
+    #     for movie in recommendations:
+    #         st.write(movie)
+    #         poster_url = fetch_movie_poster(movie)
+    #         if poster_url:
+    #            st.image(poster_url, width=150)
