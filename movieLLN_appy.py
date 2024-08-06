@@ -1,11 +1,8 @@
-
-﻿
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
 import streamlit as st
 import os
-
 
 API_KEY = 'f8aae18714b310a2ddd7cb00e6445f5f'
 
