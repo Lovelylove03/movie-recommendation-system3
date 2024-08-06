@@ -1,3 +1,3 @@
-git add requirements.txt
+#git add requirements.txt
 git commit -m "Fix requirements.txt by removing invalid line"
 git push origin main
