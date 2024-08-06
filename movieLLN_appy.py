@@ -64,6 +64,6 @@ if movie_title:
         st.write("Recommended Movies:")
         for movie in recommendations:
             st.write(movie)
-            poster_url = fetch_movie_poster(movie)
-            if poster_url:
-                st.image(poster_url, width=150)
+           # poster_url = fetch_movie_poster(movie)
+            #if poster_url:
+               # st.image(poster_url, width=150)
