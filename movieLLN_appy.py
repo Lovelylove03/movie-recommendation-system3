@@ -7,7 +7,7 @@ import streamlit as st
 import os
 
 
-TMDB_API_KEY = 'f8aae18714b310a2ddd7cb00e6445f5f'
+API_KEY = 'f8aae18714b310a2ddd7cb00e6445f5f'
 
 # Load the dataset
 file_path = 'movies_step2 - movies_step2.csv'  # Ensure the CSV is in the same directory
@@ -41,7 +41,6 @@ def get_recommendations(title, similarity_matrix, movie_titles, top_n=10):
     # Return the titles of the top_n most similar movies
     return [movie_titles[i] for i in top_indices]
 
-API_KEY = st.secrets["f8aae18714b310a2ddd7cb00e6445f5f"]
 BASE_URL = 'https://api.themoviedb.org/3'
 
 def fetch_movie_poster(movie_title):
