@@ -1,5 +1,4 @@
-git clone https://github.com/yourusername/movie-recommendation-system.git
-cd movie-recommendation-system
+
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 import requests
