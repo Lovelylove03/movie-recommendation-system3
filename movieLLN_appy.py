@@ -6,6 +6,9 @@ import requests
 import streamlit as st
 import os
 
+
+TMDB_API_KEY = st.secrets["api"]["TMDB_API_KEY"]
+
 # Load the dataset
 file_path = 'movies_step2 - movies_step2.csv'  # Ensure the CSV is in the same directory
 movies_df = pd.read_csv(file_path)
