@@ -4,7 +4,10 @@ import requests
 import streamlit as st
 import os
 
-API_KEY = 'f8aae18714b310a2ddd7cb00e6445f5f'
+# st.set_page_config(layout='wide')
+
+url = 'https://image.tmdb.org/t/p/original'
+
 
 # Load the dataset
 file_path = 'movies_step2 - movies_step2.csv'  # Ensure the CSV is in the same directory
@@ -38,16 +41,7 @@ def get_recommendations(title, similarity_matrix, movie_titles, top_n=10):
     # Return the titles of the top_n most similar movies
     return [movie_titles[i] for i in top_indices]
 
-BASE_URL = 'https://api.themoviedb.org/3'
 
-def fetch_movie_poster(movie_title):
-    search_url = f'{BASE_URL}/search/movie?api_key={API_KEY}&query={movie_title}'
-    response = requests.get(search_url).json()
-    if response['results']:
-        poster_path = response['results'][0]['poster_path']
-        full_poster_url = f'https://image.tmdb.org/t/p/w500{poster_path}'
-        return full_poster_url
-    return None
 
 # Streamlit application
 st.title("Movie Recommendation System")
