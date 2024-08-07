@@ -1,5 +1,7 @@
-pandas
-scikit-learn
 requests
-streamlit
+streamlit==1.37.1
+pandas==2.2.2
+scikit-learn==1.5.1
+# Ajoutez d'autres dépendances nécessaires
+
 
